@@ -1,4 +1,7 @@
-import org.jetbrains.annotations.NotNull;
+package Experiment2;
+
+
+import com.sun.istack.internal.NotNull;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,7 +11,7 @@ public class JudgeSameList {
     /**
      * 输出list信息
      */
-    public static void printList(int @NotNull [] list1, int[] list2) {
+    public static void printList(int[] list1, int[] list2) {
         System.out.print("输入list1：");
 
         for (int m : list1) {

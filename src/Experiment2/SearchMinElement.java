@@ -1,3 +1,5 @@
+package Experiment2;
+
 public class SearchMinElement {
     /**
      * 判断double型数num是否含有不为0的小数部分

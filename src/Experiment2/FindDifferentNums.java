@@ -1,4 +1,6 @@
-import org.jetbrains.annotations.NotNull;
+package Experiment2;
+import com.sun.istack.internal.NotNull;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -15,7 +17,7 @@ public class FindDifferentNums {
      * 找出nums_list中不同的数，并返回一个新的数组
      * 方法：快慢指针
      */
-    public static double[] getDifferentNums(double @NotNull [] nums_list) {
+    public static double[] getDifferentNums(double[] nums_list) {
         int prev = 0; // 前指针
         int cur = 0; // 后指针
         double[] different_nums = new double[1]; // 第一个数字一定不同，故先进入数组
