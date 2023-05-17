@@ -28,6 +28,36 @@ public class Triangle extends GeometricObject{
     }
 
     public double getArea() {
+        double p = (side1 + side2 + side3)/2;
+        double area;
+        area = Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));
+        return area;
+    }
 
+    public double getPerimeter() {
+        return (side1 + side2 + side3);
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "side1=" + side1 +
+                ", side2=" + side2 +
+                ", side3=" + side3 +
+                ", Perimeter=" + getPerimeter() +
+                ", Area=" + getArea() +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                ", dateCreated=" + dateCreated +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        Triangle triangle = new Triangle();
+        System.out.println(triangle.toString());
+        Triangle triangle2 = new Triangle(1,1.5,1);
+        triangle2.setColor("yellow");
+        triangle2.setFill(true);
+        System.out.println(triangle2.toString());
     }
 }

@@ -3,11 +3,13 @@ package Experiment4;
 import java.util.Date;
 
 public class GeometricObject {
-    private String color;
-    private boolean filled;
-    private Date dateCreated;
+    public String color;
+    public boolean filled;
+    public Date dateCreated;
 
     public GeometricObject() {
+        this.color = "NULL";
+        this.filled = false;
         this.dateCreated = new Date();
     }
 

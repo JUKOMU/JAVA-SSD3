@@ -1,3 +1,5 @@
+package Experiment1;
+
 public class SelectCard {
     public static String getDecor(int num) {
         String[] decor_list = {"黑桃","红桃","梅花","方片",};

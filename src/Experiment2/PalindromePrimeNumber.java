@@ -1,3 +1,5 @@
+package Experiment2;
+
 import java.util.Scanner;
 
 public class PalindromePrimeNumber {
