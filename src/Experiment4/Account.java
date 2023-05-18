@@ -29,7 +29,7 @@ public class Account {
         this.id = id;
         this.name = name;
         this.balance = balance;
-        Transaction transaction = new Transaction('D', balance, this.balance+balance, name);
+        Transaction transaction = new Transaction('D', balance, balance, name);
         this.transactions[0] = transaction;
         this.dateCreated = new Date();
     }
