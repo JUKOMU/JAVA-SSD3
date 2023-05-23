@@ -116,7 +116,7 @@ class Employee extends Person{
 
 class test{
     public static void m1(Person p){
-        System.out.println(p.getName());
+        System.out.println("姓名为："+p.getName());
     }
     public static void m2(Person p){
         System.out.println(p.toString());
