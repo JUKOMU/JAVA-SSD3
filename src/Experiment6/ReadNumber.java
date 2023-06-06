@@ -14,9 +14,9 @@ public class ReadNumber {
         Scanner input = new Scanner(System.in);
         double sum = 0;
         for (int i = 0; i < 2; i++) {
-            if (input.hasNextDouble()) {
+            if (input.hasNextDouble()) { // 判断输入是否为数字
                 double x = input.nextDouble();
-                if (isDecimal(x)) {
+                if (isDecimal(x)) { // 判断是否为整数
                     input.nextLine();
                     throw new NumberFormatException();
                 } else {
@@ -41,7 +41,7 @@ public class ReadNumber {
                 continueInput = false;
             }
             catch (NumberFormatException expected) {
-                System.out.println("incorrect number format,try again");
+                System.out.println("Incorrect number format,try again!");
             }
         } while (continueInput);
     }
