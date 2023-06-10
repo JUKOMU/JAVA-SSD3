@@ -16,9 +16,9 @@ public class TextCounter {
          * 65-90 A-Z
          * 97-122 a-z
          */
-        int line = 1;
-        int words = 0;
-        int chars = 0;
+        int line = 1; // 记录行数，并认为完全空文本为一行
+        int words = 0; // 记录单词数
+        int chars = 0; // 记录字符数
         boolean isChars = false;
         for (byte b : bytes) {
             if (b == 9 || b == 10 || b == 13 || b == 32) {
@@ -28,6 +28,7 @@ public class TextCounter {
                 }
             } else {
                 chars++;
+                // 仅当从非字母字符读到字母字符时读取了一个新单词
                 if (!isChars) {
                     words++;
                     isChars = true;
